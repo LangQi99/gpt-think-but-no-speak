@@ -1,0 +1,3 @@
+interface:
+  display_name: "GPT Think But No Speak"
+  short_description: "Polish agent updates before sending them to users"
