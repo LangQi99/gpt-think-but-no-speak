@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 440" width="1280" height="440" role="img" aria-labelledby="title description">
+  <title id="title">From draft to plain speech</title>
+  <desc id="description">On the left, a small robot stands beside a stack of paperwork. On the right, the robot has a clear speech bubble that reads Fixed. 12 tests passed.</desc>
+  <defs>
+    <pattern id="grain" width="8" height="8" patternUnits="userSpaceOnUse">
+      <circle cx="1" cy="1" r=".62" fill="#4f4330" opacity=".17"/>
+    </pattern>
+    <g id="bot" stroke="#292d27" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M25 127h81M47 107v20m37-20v20" fill="none"/>
+      <rect x="15" y="48" width="102" height="59" rx="18" fill="#fffaf1"/>
+      <rect x="39" y="76" width="52" height="15" rx="7.5" fill="#e8dfc5" stroke-width="3"/>
+      <path d="M16 66H4m113 0h11" fill="none"/>
+      <rect x="6" y="4" width="120" height="66" rx="18" fill="#fffaf1"/>
+      <path d="M66 4v-14" fill="none"/>
+      <circle cx="66" cy="-16" r="6" fill="#f2b464"/>
+      <path d="M35 33h10m42 0h10" fill="none" stroke-width="5"/>
+    </g>
+  </defs>
+
+  <rect x="1" y="1" width="1278" height="438" rx="23" fill="#f5efdf" stroke="#d7ceba" stroke-width="2"/>
+  <rect x="2" y="2" width="1276" height="436" rx="22" fill="url(#grain)" opacity=".56"/>
+  <rect x="41" y="39" width="536" height="362" rx="19" fill="#eee5d5" stroke="#292d27" stroke-width="3"/>
+  <rect x="703" y="39" width="536" height="362" rx="19" fill="#e4efdc" stroke="#292d27" stroke-width="3"/>
+
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-weight="700" font-size="21" letter-spacing="2" fill="#292d27">
+    <text x="68" y="83">DRAFT</text>
+    <text x="730" y="83">AFTER AN EDIT</text>
+  </g>
+
+  <g transform="rotate(-8 346 237)">
+    <rect x="201" y="140" width="307" height="193" rx="12" fill="#dfc7a4" stroke="#292d27" stroke-width="3"/>
+  </g>
+  <g transform="rotate(7 346 226)">
+    <rect x="210" y="126" width="307" height="204" rx="12" fill="#eddbbf" stroke="#292d27" stroke-width="3"/>
+  </g>
+  <rect x="182" y="119" width="343" height="221" rx="12" fill="#fffaf1" stroke="#292d27" stroke-width="3"/>
+  <g fill="#292d27" font-family="system-ui, -apple-system, Segoe UI, Arial, sans-serif" font-weight="600" font-size="23">
+    <text x="208" y="163">Based on the available</text>
+    <text x="208" y="194">verification results…</text>
+  </g>
+  <g fill="none" stroke="#a39177" stroke-width="6" stroke-linecap="round" opacity=".72">
+    <path d="M210 221h262m-262 21h209m-209 21h238m-238 21h153"/>
+  </g>
+  <path d="M245 207c62-13 112-17 212-16" fill="none" stroke="#aa3e30" stroke-width="4" stroke-linecap="round"/>
+  <use href="#bot" x="71" y="233"/>
+  <path d="M122 284h21" stroke="#292d27" stroke-width="4" stroke-linecap="round"/>
+  <path d="M202 325c11-8 20-15 37-17" fill="none" stroke="#aa3e30" stroke-width="3" stroke-linecap="round"/>
+
+  <g stroke="#292d27" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M600 246h78m-13-13 13 13-13 13" fill="none" stroke-width="3"/>
+    <path d="M609 218l10-28 36-36 16 16-36 36z" fill="#efb260" stroke-width="3"/>
+    <path d="M619 190l16 16m20-52 6-6a8 8 0 0 1 11 0l5 5a8 8 0 0 1 0 11l-6 6" fill="#d97563" stroke-width="3"/>
+    <path d="M609 218l11-4-7-7z" fill="#292d27" stroke-width="2"/>
+  </g>
+
+  <use href="#bot" x="734" y="233"/>
+  <path d="M785 284q10 10 21 0" fill="none" stroke="#292d27" stroke-width="4" stroke-linecap="round"/>
+  <path d="M874 120h285q31 0 31 31v88q0 31-31 31H932l-58 39 15-39h-15q-31 0-31-31v-88q0-31 31-31z" fill="#f8fff2" stroke="#292d27" stroke-width="3.5" stroke-linejoin="round"/>
+  <g fill="#243326" font-family="system-ui, -apple-system, Segoe UI, Arial, sans-serif">
+    <text x="881" y="189" font-size="51" font-weight="750">Fixed.</text>
+    <text x="882" y="232" font-size="28" font-weight="560">12 tests passed.</text>
+  </g>
+  <circle cx="1139" cy="169" r="19" fill="#bde2a7" stroke="#426644" stroke-width="2"/>
+  <path d="M1131 169l6 6 11-12" fill="none" stroke="#25472c" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
