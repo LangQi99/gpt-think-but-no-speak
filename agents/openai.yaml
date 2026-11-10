@@ -1,3 +1,3 @@
 interface:
   display_name: "GPT Think But No Speak"
-  short_description: "Polish agent updates before sending them to users"
+  short_description: "发进度、说卡点、交结果前，问问更会说话的大脑怎么说"

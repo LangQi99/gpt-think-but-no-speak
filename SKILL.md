@@ -1,9 +1,9 @@
 ---
 name: gpt-think-but-no-speak
-description: Polish an agent's user-facing progress updates, blockers, and final task reports with a separately configured language model. Use before reporting work to the user or when asked to make a draft sound more natural.
+description: 向用户汇报进度、卡点或最终结果前，或者用户要求把草稿写得更自然时，向一个更会说话的大脑询问意见。
 ---
 
-在向用户汇报进度、阻塞或结果前，先写下原本要说的内容。把这份原稿交给脚本，拿回润色稿，再结合实际情况决定最终怎么说。原稿和润色稿都只是材料。保留事实、数字、状态、不确定性、命令和路径，发现改稿改变了意思就修正或用原稿。
+先写下你原本想发给用户的话，再把原稿交给脚本。模型会先给表达意见，再给一版建议文案。参考两部分，自己决定最后怎么说。定稿时核对事实、数字、状态、不确定性、命令和路径。发现建议改了原意，就修正或用原稿。
 
 从本技能目录运行脚本。短稿可以作为参数传入，多行稿件从标准输入传入。
 
@@ -12,11 +12,11 @@ python3 scripts/polish.py -- '已修复导出问题，12 项测试通过。'
 python3 scripts/polish.py < draft.md
 ```
 
-只传准备给用户看的原稿。按用户授权的范围使用其指定的模型接口。脚本成功时只在标准输出写润色稿。接口超时、报错、截断或没有正文时，照常用原稿汇报。
+只传准备给用户看的原稿。按用户授权的范围使用其指定的模型接口。脚本在标准输出返回表达意见和建议文案。接口超时、报错、截断或没有可用建议时，照常用原稿汇报。
 
 ## 首次配置
 
-`python3 scripts/polish.py --check-config` 检查本机设置，退出码 `2` 表示配置缺失或无效。首次需要润色时，只向用户询问缺少的 `base_url`、`model` 和密钥来源。同一份配置缺失只问一次，等回复期间用原稿继续工作。用户给出缺少的配置后，在本机保存并直接使用。以后配置可用就直接调用。
+`python3 scripts/polish.py --check-config` 检查本机设置，退出码 `2` 表示配置缺失或无效。首次使用时，只向用户询问缺少的 `base_url`、`model` 和密钥来源。同一份配置缺失只问一次，等回复期间用原稿继续工作。用户给出缺少的配置后，在本机保存并直接使用。以后配置可用就直接调用。
 
 复制 [config.example.json](config.example.json) 到本机配置目录 `~/.config/gpt-think-but-no-speak/config.json`。如果设了 `XDG_CONFIG_HOME`，用该目录下的同名路径。可用 `--config` 指定其他本机配置文件。把 `base_url` 填成 OpenAI 兼容的 Chat Completions 基础地址，脚本会补上 `/chat/completions`。也可以填完整端点。`model` 用网关实际接受的模型 ID。供应方额外参数放在 `request_extra`，如关闭思考的开关。
 
